@@ -1,0 +1,30 @@
+<view>
+  <view class="logo_content">
+    <block>
+      <image src="../../resources/img/logo2.jpg" class="logo"></image>
+      <text>logo</text>
+    </block>
+  </view>
+  <view class="change_code">
+    <label>
+      <text>帐号</text>
+      <input placeholder="输入帐号"/>
+    </label>
+    <label>
+      <text>原密码</text>
+      <input type="code" placeholder="密码长度8-16个字符（区分大小写）" maxlength="16" placeholder-style="font-size: 20rpx;"/>
+    </label>
+    <label>
+      <text>新密码</text>
+      <input placeholder="密码长度8-16个字符（区分大小写）" placeholder-style="font-size: 20rpx;"/>
+    </label>
+    <label>
+      <text>确认密码</text>
+      <input placeholder="密码长度8-16个字符（区分大小写）" placeholder-style="font-size: 20rpx;"/>
+    </label>
+  </view>
+  <view class="button">
+    <button>取消</button>
+    <button>确认</button>
+  </view>
+</view>

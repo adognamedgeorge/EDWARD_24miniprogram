@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/firstp/firstp",
+    "pages/schedule/schedule",
+    "pages/mine/mine",
+    "pages/order/order",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/code/code",
+    "pages/common/orderform/orderform"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTitleText": "测试",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ccc",
+    "list": [
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "登录",
+        "iconPath": "./resources/img/home.png",
+        "selectedIconPath": "./resources/img/homed.png"
+      },
+      {
+        "pagePath": "pages/firstp/firstp",
+        "text": "首页",
+        "iconPath": "./resources/img/home.png",
+        "selectedIconPath": "./resources/img/homed.png"
+      },
+      {
+        "pagePath": "pages/schedule/schedule",
+        "text": "日程",
+        "iconPath": "./resources/img/log.png",
+        "selectedIconPath": "./resources/img/loged.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单中心",
+        "iconPath": "./resources/img/log.png",
+        "selectedIconPath": "./resources/img/loged.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "详情",
+        "iconPath": "./resources/img/mine.png",
+        "selectedIconPath": "./resources/img/mined.png"
+      }
+    ]
+  }
+}

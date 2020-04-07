@@ -1,0 +1,34 @@
+<!--pages/common/orderform/orderform.wxml-->
+<view>
+  <view class="bg">
+    <view class="cell">
+      <view class="block">待上门</view>
+      <text class="number">2000000000000132</text>
+    </view>
+    <view wx:for="{{arr}}" wx:key="index" class="cell">
+      <view class="name">{{item.name}}：</view>
+      <text class="content">{{item.content}}</text>
+    </view>
+    <view class="bottom">
+      <view class="btm_img">
+        <image class="img" src="../../resources/img/mine.png" />
+      </view>
+      <view class="btm_middle">电路检修电路检修电路检修电路检修电路检修电路检修</view>
+      <view class="btm_rt">
+        <text class="rt_top">￥39.9</text>
+        <text class="rt_btm">× 1</text>
+      </view>
+    </view>
+    <view class="total">
+      <view class="total_lf">共<text class="red">1</text>件</view>
+      <view>合计：<text class="red">￥30.00</text></view>
+    </view>
+    <view class="btn_view">
+      <button class="btn">修改时间</button>
+      <button class="btn" bindtap="tapConfirmButton">到达现场</button>
+    </view>
+    <mp-dialog title="" show="{{showConfirmButton}}" buttons="{{confirmButton}}" bindbuttontap="tapDialogButton">
+      <view>确认到达维修地点吗？</view>
+    </mp-dialog>
+  </view>
+</view>

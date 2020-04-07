@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container page">
+  <!-- 搜索框 -->
+  <view class="weui-cell_input">
+    <view class="lf">
+      <text>杭州市·江干区</text>
+    </view>
+    <view class="rt">
+      <input class="weui-input" placeholder="你想修哪？" auto-focus maxlength="10"/>
+    </view>
+  </view>
+  <!-- 轮播 -->
+  <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px" display-multiple-items="2">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else class="block">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

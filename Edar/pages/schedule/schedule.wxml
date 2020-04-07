@@ -1,0 +1,3 @@
+<view>
+  <order-form arr="{{scheduleArr}}"></order-form>
+</view>

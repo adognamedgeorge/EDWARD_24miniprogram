@@ -1,0 +1,101 @@
+/* pages/firstp/firstp.wxss */
+.page {
+  padding: 30rpx 15rpx;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+.lf {
+  display: flex;
+  align-items: center;
+}
+
+.lf_text {
+  width: 70px;
+  margin-left: 20rpx;
+}
+
+.rt {
+  width: 60%;
+  margin-left: 40rpx;
+}
+.rt, .lf_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bd {
+  background-color: lightgray;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-top: 20rpx;
+  padding-right: 20rpx;
+}
+
+.bd_view {
+  display: flex;
+}
+
+.more {
+  position: relative;
+}
+
+.more_badge {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+
+.lf_img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.bd_img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10rpx;
+}
+
+.cell_text {
+  margin-left: 100rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 350rpx;
+}
+
+.view_flex {
+  padding: 20rpx 40rpx;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex_content {
+  position: relative;
+  width: 40px;
+  margin: 50rpx 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.flex_img {
+  width: 40px;
+  height: 40px;
+}
+
+.flex_badge {
+  position: absolute;
+  top: -20rpx;
+  right: 2rpx;
+}

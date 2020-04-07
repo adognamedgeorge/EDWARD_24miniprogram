@@ -1,0 +1,95 @@
+<view class="page">
+  <view class="title">
+    <view class="lf">
+      <image src="../../resources/img/mine.png" class="lf_img"/>
+      <text class="lf_text">陈萍萍</text>
+    </view>
+    <text class="rt">国网浙江综合江干第一供电所</text>
+  </view>
+
+  <view class="bd">
+    <mp-cells>
+      <mp-cell>
+        <view class="bd_view">
+          <image src="../../resources/img/home.png" class="bd_img"/>
+        <view>今日待办</view>
+        </view>
+        <view class="more" slot="footer">
+          <text>更多</text>
+          <mp-badge content="99+" class="more_badge" />
+        </view>
+      </mp-cell>
+      <mp-cell title="8:30~9:30">
+        <view class="cell_text">中华北大街21号</view>
+      </mp-cell>
+      <mp-cell title="8:30~9:30">
+        <view class="cell_text">中华北大街21号</view>
+      </mp-cell>
+    </mp-cells>
+  </view>
+
+  <view class="bd">
+    <mp-cells>
+      <mp-cell>
+        <view class="bd_view">
+          <image class="bd_img" src="../../resources/img/mine.png"/>
+          <view>等待派工</view>
+        </view>
+        <view class="more" slot="footer">
+          <text>更多</text>
+          <mp-badge content="22" class="more_badge"></mp-badge>
+        </view>
+      </mp-cell>
+      <mp-cell title="10:30~12:30">
+        <view class="cell_text">解放东路解放东路解放东路解放东路</view>
+      </mp-cell>
+      <mp-cell title="13:50~16:30">
+        <view class="cell_text">等等等等等等多</view>
+      </mp-cell>
+    </mp-cells>
+  </view>
+
+  <view class="bd">
+    <mp-cells>
+      <mp-cell>
+        <view class="bd_view">
+          <image class="bd_img" src="../../resources/img/log.png"/>
+          <text>订单中心</text>
+        </view>
+      </mp-cell>
+      <view class="view_flex">
+        <view class="flex_content">
+          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <text>待上门</text>
+          <mp-badge content="2" class="flex_badge"></mp-badge>
+        </view>
+        <view class="flex_content">
+          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <text>维修中</text>
+          <mp-badge content="2" class="flex_badge"></mp-badge>
+        </view>
+        <view class="flex_content">
+          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <text>待验收</text>
+          <mp-badge content="2" class="flex_badge"></mp-badge>
+        </view>
+        <view class="flex_content">
+          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <text>待支付</text>
+          <mp-badge content="2" class="flex_badge"></mp-badge>
+        </view>
+        <view class="flex_content">
+          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <text>待评价</text>
+          <mp-badge content="2" class="flex_badge"></mp-badge>
+        </view>
+        <view class="flex_content">
+          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <text>全部</text>
+          <mp-badge content="2" class="flex_badge"></mp-badge>
+        </view>
+      </view>
+    </mp-cells>
+  </view>
+
+</view>
