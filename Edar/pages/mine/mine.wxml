@@ -17,14 +17,14 @@
   <view class="middle">
     <view class="non-payment">
       <view class="top">
-        <image src="../../resources/img/home.png" class="rtImg"/>
+        <image src="../../resources/img/moneybag.png" class="rtImg"/>
         <text>待结算</text>
       </view>
       <view>￥239</view>
     </view>
     <view class="total">
       <view class="top">
-        <image src="../../resources/img/mine.png" class="rtImg" />
+        <image src="../../resources/img/pag.png" class="rtImg" />
         <text>总收入</text>
       </view>
       <view>￥19999</view>
@@ -35,7 +35,7 @@
     <mp-cells>
       <mp-cell>
         <view class="cell_lf">
-          <image src="../../resources/img/mine.png" class="cell_img"/>
+          <image src="../../resources/img/resource_skill.png" class="cell_img"/>
           <view>服务技能</view>
         </view>
         <view slot="footer" class="cell_rt">
@@ -45,7 +45,7 @@
       </mp-cell>
       <mp-cell>
         <view class="cell_lf">
-          <image src="../../resources/img/mine.png" class="cell_img"/>
+          <image src="../../resources/img/money.png" class="cell_img"/>
           <view>收入记录</view>
         </view>
         <view slot="footer" class="cell_rt">
