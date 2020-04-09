@@ -1,0 +1,51 @@
+.logo {
+  width: 228rpx;
+  height: 228rpx;
+  border-radius: 50%;
+  margin: 20rpx;
+}
+
+.logo_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30rpx;
+}
+
+.cellphone, .code {
+  display: flex;
+  border: 1px solid #ccc;
+  margin: 50rpx 20rpx;
+  height: 100rpx;
+  align-items: center;
+  line-height: 100rpx;
+}
+
+.input {
+  height: 100rpx;
+  width: 80%;
+  margin-left: 10rpx;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rpx;
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 40rpx;
+}
+
+button {
+  margin: 30rpx;
+  color: #ffffff;
+}
+
+.button-hover {
+  background-color: blue;
+}
+
+.button_hover {
+  background-color: red;
+}
+

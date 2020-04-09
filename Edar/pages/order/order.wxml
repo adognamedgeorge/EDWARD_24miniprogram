@@ -1,15 +1,8 @@
 <!--pages/order/order.wxml-->
-<view style="padding: 20rpx;">
+<view>
   <view class="page_section page_section_spacing">
-    <swiper display-multiple-items="5" class="swiper">
-      <block wx:for="{{imgArr}}" wx:key="*this">
-        <swiper-item>
-          <view class="content">
-            <image class="img" src="{{item.imgSrc}}" />
-            <text>{{item.text}}</text>
-          </view>
-        </swiper-item>
-      </block>
-    </swiper>
+    <mp-tabbar list="{{tabList}}" wx:key="index" bindchange="tabChange" ></mp-tabbar>
   </view>
+  <order-form blockTitle="{{blockTitle}}" 
+  arr="{{orderArr}}" ></order-form>
 </view>

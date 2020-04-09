@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/firstp/firstp",
+    "pages/login/login",
     "pages/schedule/schedule",
-    "pages/mine/mine",
     "pages/order/order",
     "pages/logs/logs",
-    "pages/index/index",
+    "pages/mine/mine",
     "pages/code/code",
-    "pages/common/orderform/orderform"
+    "pages/common/orderform/orderform",
+    "pages/firstp/firstp"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,12 +21,6 @@
     "selectedColor": "#ccc",
     "list": [
       {
-        "pagePath": "pages/mine/mine",
-        "text": "登录",
-        "iconPath": "./resources/img/home.png",
-        "selectedIconPath": "./resources/img/homed.png"
-      },
-      {
         "pagePath": "pages/firstp/firstp",
         "text": "首页",
         "iconPath": "./resources/img/home.png",
@@ -35,8 +29,8 @@
       {
         "pagePath": "pages/schedule/schedule",
         "text": "日程",
-        "iconPath": "./resources/img/log.png",
-        "selectedIconPath": "./resources/img/loged.png"
+        "iconPath": "./resources/img/schedule.png",
+        "selectedIconPath": "./resources/img/scheduled.png"
       },
       {
         "pagePath": "pages/order/order",
@@ -45,8 +39,8 @@
         "selectedIconPath": "./resources/img/loged.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "详情",
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
         "iconPath": "./resources/img/mine.png",
         "selectedIconPath": "./resources/img/mined.png"
       }

@@ -3,7 +3,7 @@
   background-color: lightgray;
   border: 1rpx solid grey;
   border-radius: 20rpx;
-  margin: 10rpx 30rpx;
+  margin: 10rpx 15rpx;
 }
 
 .block {

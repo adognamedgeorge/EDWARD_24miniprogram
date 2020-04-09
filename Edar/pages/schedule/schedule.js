@@ -1,5 +1,6 @@
 Page({
   data: {
+    scheduleTitle: '待上门',
     scheduleArr: [
       {
         name: '维修员工',
@@ -30,17 +31,18 @@ Page({
         content: '电路类型维修'
       }
     ],
-    showConfirmButton: false,
-    confirmButton: [{ text: '确定' }]
-  },
-  tapConfirmButton(e) {
-    this.setData({
-      showConfirmButton: true
-    })
-  },
-  tapDialogButton(e) {
-    this.setData({
-      showConfirmButton: false
-    })
+    // showConfirmButton: false,
+    confirmButton: [{ text: '确定' }],
+    scheduleImg: '../../../resources/img/mine.png'
   }
+  // tapConfirmButton(e) {
+  //   this.setData({
+  //     showConfirmButton: true
+  //   })
+  // },
+  // tapDialogButton(e) {
+  //   this.setData({
+  //     showConfirmButton: false
+  //   })
+  // }
 })

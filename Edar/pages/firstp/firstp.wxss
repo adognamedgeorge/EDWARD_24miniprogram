@@ -37,6 +37,8 @@
   border-radius: 10px;
   margin-top: 20rpx;
   padding-right: 20rpx;
+  width: 95%;
+  overflow: hidden;
 }
 
 .bd_view {
@@ -79,6 +81,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.weui-cells__group {
+  background: red !important;
 }
 
 .flex_content {

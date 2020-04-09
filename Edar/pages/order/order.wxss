@@ -7,9 +7,9 @@
 }
 
 .page_section {
-  width: 100%;
+  margin: 10rpx auto;
   height: 200rpx;
-  overflow: hidden;
+  width: 97%;
 }
 
 .swiper {
@@ -20,7 +20,6 @@
   box-sizing: border-box;
   background-color: lightblue;
   border-radius: 15rpx;
-  margin: 0 auto;
   font-size: 40rpx;
 }
 

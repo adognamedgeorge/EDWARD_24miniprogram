@@ -1,28 +1,58 @@
-<view class="page">
-  <!-- logo -->
-  <view class="logo_content">
-    <block>
-      <image src="../../resources/img/logo2.jpg" class="logo"></image>
-      <text>logo</text>
+<!--mine.wxml-->
+<view class="container page">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else class="block">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="block_lf">
+        <view class="userinfo-nickname">
+          {{userInfo.nickName}}
+          <text>06889</text>
+        </view>
+        <text class="office">国网浙江综合江干第一供电所ddddddddttt</text>
+      </view>
     </block>
   </view>
-  <!-- 登录 -->
-  <view>
-    <view class="cellphone">
-      <mp-icon type="outline" icon="cellphone"></mp-icon>
-      <input placeholder="帐号登录" class="input" focus="true"/>
+
+  <view class="middle">
+    <view class="non-payment">
+      <view class="top">
+        <image src="../../resources/img/home.png" class="rtImg"/>
+        <text>待结算</text>
+      </view>
+      <view>￥239</view>
     </view>
-    <view class="code">
-      <mp-icon type="outline" icon="lock"></mp-icon>
-      <input placeholder="密码" class="input" focus="true" type="password" maxlength="6"/>
+    <view class="total">
+      <view class="top">
+        <image src="../../resources/img/mine.png" class="rtImg" />
+        <text>总收入</text>
+      </view>
+      <view>￥19999</view>
     </view>
-    <view class="remember">
-      <label>
-        <checkbox value="记住密码" checked></checkbox>
-        记住密码
-    </label>
-    <navigator url="/pages/code/code?title=code">修改密码</navigator>
-    </view>
-    <button type="default" hover-class="button_hover" form-type="submit">登录</button>
+  </view>
+
+  <view class="cells">
+    <mp-cells>
+      <mp-cell>
+        <view class="cell_lf">
+          <image src="../../resources/img/mine.png" class="cell_img"/>
+          <view>服务技能</view>
+        </view>
+        <view slot="footer" class="cell_rt">
+          <text class="more">></text>
+          <mp-badge content="11" class="more_badge"></mp-badge>
+        </view>
+      </mp-cell>
+      <mp-cell>
+        <view class="cell_lf">
+          <image src="../../resources/img/mine.png" class="cell_img"/>
+          <view>收入记录</view>
+        </view>
+        <view slot="footer" class="cell_rt">
+          <text class="more">></text>
+          <mp-badge content="12" class="more_badge"></mp-badge>
+        </view>
+      </mp-cell>
+    </mp-cells>
   </view>
 </view>

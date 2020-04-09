@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "mp-dialog": "../../components/weui/dialog/dialog"
+  },
   "component": true
 }

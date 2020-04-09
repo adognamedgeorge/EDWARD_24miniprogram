@@ -1,18 +1,21 @@
 <view class="page">
   <view class="title">
     <view class="lf">
-      <image src="../../resources/img/mine.png" class="lf_img"/>
-      <text class="lf_text">陈萍萍</text>
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo"         bindgetuserinfo="getUserInfo" style="height: 70rpx; width: 180rpx; line-height: 70rpx; font-size: 25rpx;"> 获取头像昵称 </button>
+      <view wx:else style="display: flex;">
+        <image src="{{userInfo.avatarUrl}}" class="lf_img"/>
+        <text class="lf_text">{{userInfo.nickName}}</text>
+      </view>
     </view>
     <text class="rt">国网浙江综合江干第一供电所</text>
   </view>
 
   <view class="bd">
     <mp-cells>
-      <mp-cell>
+      <mp-cell style="background: red;">
         <view class="bd_view">
-          <image src="../../resources/img/home.png" class="bd_img"/>
-        <view>今日待办</view>
+          <image src="../../resources/img/sort.png" class="bd_img"/>
+          <view>今日待办</view>
         </view>
         <view class="more" slot="footer">
           <text>更多</text>
@@ -32,7 +35,7 @@
     <mp-cells>
       <mp-cell>
         <view class="bd_view">
-          <image class="bd_img" src="../../resources/img/mine.png"/>
+          <image class="bd_img" src="../../resources/img/deliver.png"/>
           <view>等待派工</view>
         </view>
         <view class="more" slot="footer">
@@ -59,32 +62,32 @@
       </mp-cell>
       <view class="view_flex">
         <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <image class="flex_img" src="../../resources/img/sand.png"/>
           <text>待上门</text>
           <mp-badge content="2" class="flex_badge"></mp-badge>
         </view>
         <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <image class="flex_img" src="../../resources/img/fix.png"/>
           <text>维修中</text>
           <mp-badge content="2" class="flex_badge"></mp-badge>
         </view>
         <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <image class="flex_img" src="../../resources/img/wait.png"/>
           <text>待验收</text>
           <mp-badge content="2" class="flex_badge"></mp-badge>
         </view>
         <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <image class="flex_img" src="../../resources/img/waitPay.png"/>
           <text>待支付</text>
           <mp-badge content="2" class="flex_badge"></mp-badge>
         </view>
         <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <image class="flex_img" src="../../resources/img/assess.png"/>
           <text>待评价</text>
           <mp-badge content="2" class="flex_badge"></mp-badge>
         </view>
         <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/mine.png"/>
+          <image class="flex_img" src="../../resources/img/all.png"/>
           <text>全部</text>
           <mp-badge content="2" class="flex_badge"></mp-badge>
         </view>

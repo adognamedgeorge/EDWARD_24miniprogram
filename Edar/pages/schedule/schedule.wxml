@@ -1,3 +1,5 @@
 <view>
-  <order-form arr="{{scheduleArr}}"></order-form>
+  <order-form arr="{{scheduleArr}}" 
+  confirmButton="{{confirmButton}}" 
+  imgSrc="{{scheduleImg}}" blockTitle="{{scheduleTitle}}"></order-form>
 </view>

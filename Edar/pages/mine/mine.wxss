@@ -1,51 +1,92 @@
-.logo {
-  width: 228rpx;
-  height: 228rpx;
-  border-radius: 50%;
-  margin: 20rpx;
+@import './weui.wxss';
+/**mine.wxss**/
+.container {
+  padding-top: 30rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.logo_content {
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.office {
+  overflow: hidden;
+}
+
+.block_lf {
+  margin-left: 30rpx;
+  flex: .8;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+.non-payment, .total {
+  background-color: lightblue;
+  height: 300rpx;
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30rpx;
+  justify-content: center;
 }
 
-.cellphone, .code {
+.top {
   display: flex;
-  border: 1px solid #ccc;
-  margin: 50rpx 20rpx;
-  height: 100rpx;
   align-items: center;
-  line-height: 100rpx;
-}
-
-.input {
   height: 100rpx;
-  width: 80%;
-  margin-left: 10rpx;
+  line-height: 100rpx;
+  margin-bottom: 20rpx;
 }
 
-.remember {
+.rtImg {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 10rpx;
+}
+
+.cell_lf {
   display: flex;
-  justify-content: space-between;
-  padding: 0 40rpx;
-  font-size: 14px;
-  color: grey;
-  margin-bottom: 40rpx;
 }
 
-button {
-  margin: 30rpx;
-  color: #ffffff;
+.cell_img {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
 }
 
-.button-hover {
-  background-color: blue;
+.cells {
+  width: 90%;
+  margin-top: 30rpx;
+  padding: 10rpx 20rpx;
 }
 
-.button_hover {
-  background-color: red;
+.cell_rt {
+  position: relative;
 }
 
+.more {
+  font-size: 60rpx;
+}
+
+.more_badge {
+  position: absolute;
+  top: -6rpx;
+  right: -30rpx;
+}

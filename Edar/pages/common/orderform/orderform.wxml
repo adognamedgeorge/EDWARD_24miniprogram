@@ -2,7 +2,7 @@
 <view>
   <view class="bg">
     <view class="cell">
-      <view class="block">待上门</view>
+      <view class="block">{{blockTitle}}</view>
       <text class="number">2000000000000132</text>
     </view>
     <view wx:for="{{arr}}" wx:key="index" class="cell">
@@ -11,7 +11,7 @@
     </view>
     <view class="bottom">
       <view class="btm_img">
-        <image class="img" src="../../resources/img/mine.png" />
+        <image class="img" src="{{imgSrc}}" />
       </view>
       <view class="btm_middle">电路检修电路检修电路检修电路检修电路检修电路检修</view>
       <view class="btm_rt">
