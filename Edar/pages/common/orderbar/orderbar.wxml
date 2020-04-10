@@ -1,0 +1,5 @@
+<view>
+  <view class="page_section page_section_spacing">
+    <mp-tabbar list="{{tabList}}" wx:key="index" bindchange="tabChange" ></mp-tabbar>
+  </view>
+</view>

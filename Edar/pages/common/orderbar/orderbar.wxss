@@ -1,0 +1,23 @@
+/* pages/common/orderbar/orderbar.wxss */
+.img {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+}
+
+.page_section {
+  margin: 10rpx auto;
+  height: 200rpx;
+  width: 97%;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.page_section_spacing {
+  box-sizing: border-box;
+  background-color: lightblue;
+  border-radius: 15rpx;
+  font-size: 40rpx;
+}

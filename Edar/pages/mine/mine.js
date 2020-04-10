@@ -21,7 +21,7 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../order/order'
+      url: '../logs/logs'
     })
   },
   onLoad: function () {

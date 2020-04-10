@@ -32,8 +32,8 @@
 }
 
 .bd {
-  background-color: lightgray;
-  border: 1px solid grey;
+  background-color: rgb(250, 242, 242);
+  border: 1px solid lightgrey;
   border-radius: 10px;
   margin-top: 20rpx;
   padding-right: 20rpx;
@@ -89,7 +89,7 @@
 
 .flex_content {
   position: relative;
-  width: 40px;
+  width: 50px;
   margin: 50rpx 40rpx;
   font-size: 30rpx;
   text-align: center;

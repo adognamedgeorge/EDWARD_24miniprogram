@@ -1,8 +1,6 @@
 <!--pages/order/order.wxml-->
 <view>
-  <view class="page_section page_section_spacing">
-    <mp-tabbar list="{{tabList}}" wx:key="index" bindchange="tabChange" ></mp-tabbar>
-  </view>
+  <order-bar></order-bar>
   <order-form blockTitle="{{blockTitle}}" 
   arr="{{orderArr}}" ></order-form>
 </view>

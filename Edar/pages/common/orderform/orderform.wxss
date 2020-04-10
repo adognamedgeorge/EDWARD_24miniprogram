@@ -1,7 +1,7 @@
 /* pages/common/orderform/orderform.wxss */
 .bg {
-  background-color: lightgray;
-  border: 1rpx solid grey;
+  background-color: rgb(250, 242, 242);
+  border: 1rpx solid lightgrey;
   border-radius: 20rpx;
   margin: 10rpx 15rpx;
 }

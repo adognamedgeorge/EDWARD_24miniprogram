@@ -1,0 +1,4 @@
+<!--pages/order/finishOrder/finishOrder.wxml-->
+<view>
+  <order-form></order-form>
+</view>

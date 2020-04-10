@@ -2,12 +2,12 @@
   <view class="title">
     <view class="lf">
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo"         bindgetuserinfo="getUserInfo" style="height: 70rpx; width: 180rpx; line-height: 70rpx; font-size: 25rpx;"> 获取头像昵称 </button>
-      <view wx:else style="display: flex;">
+      <view wx:else style="display: flex;" bindtap="toMineView">
         <image src="{{userInfo.avatarUrl}}" class="lf_img"/>
         <text class="lf_text">{{userInfo.nickName}}</text>
       </view>
     </view>
-    <text class="rt">国网浙江综合江干第一供电所</text>
+    <text class="rt" bindtap="toMineView">国网浙江综合江干第一供电所</text>
   </view>
 
   <view class="bd">
@@ -61,38 +61,12 @@
         </view>
       </mp-cell>
       <view class="view_flex">
-        <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/sand.png"/>
-          <text>待上门</text>
-          <mp-badge content="2" class="flex_badge"></mp-badge>
-        </view>
-        <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/fix.png"/>
-          <text>维修中</text>
-          <mp-badge content="2" class="flex_badge"></mp-badge>
-        </view>
-        <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/wait.png"/>
-          <text>待验收</text>
-          <mp-badge content="2" class="flex_badge"></mp-badge>
-        </view>
-        <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/waitPay.png"/>
-          <text>待支付</text>
-          <mp-badge content="2" class="flex_badge"></mp-badge>
-        </view>
-        <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/assess.png"/>
-          <text>待评价</text>
-          <mp-badge content="2" class="flex_badge"></mp-badge>
-        </view>
-        <view class="flex_content">
-          <image class="flex_img" src="../../resources/img/all.png"/>
-          <text>全部</text>
+        <view class="flex_content" wx:for="{{orderList}}" wx:key="index" bindtap="bindToOrder">
+          <image class="flex_img" src="{{item.imgSrc}}"/>
+          <text>{{item.text}}</text>
           <mp-badge content="2" class="flex_badge"></mp-badge>
         </view>
       </view>
     </mp-cells>
   </view>
-
 </view>

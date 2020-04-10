@@ -3,7 +3,65 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    orderList: [
+      {
+        imgSrc: '../../resources/img/sand.png',
+        text: '待上门'
+      },
+      {
+        imgSrc: '../../resources/img/fix.png',
+        text: '维修中'
+      },
+      {
+        imgSrc: '../../resources/img/wait.png',
+        text: '待验收'
+      },
+      {
+        imgSrc: '../../resources/img/waitPay.png',
+        text: '待支付'
+      },
+      {
+        imgSrc: '../../resources/img/assess.png',
+        text: '待评价'
+      },
+      {
+        imgSrc: '../../resources/img/all.png',
+        text: '全部'
+      }
+    ]
+  },
+  // 跳转到“我的”页面
+  toMineView: function (e) {
+    wx.showLoading({
+      title: '跳转中...',
+      success: function () {
+        setTimeout(function () {
+          wx.switchTab({
+            url: '../mine/mine'
+          })
+        }, 500)
+      }
+    }),
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 500)
+  },
+  // 跳转到“订单页面”
+  bindToOrder: function () {
+    wx.showLoading({
+      title: '加载中...',
+      success: function () {
+        setTimeout(function () {
+          wx.switchTab({
+            url: '../order/order'
+          })
+        }, 200)
+      }
+    }),
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 200)
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
