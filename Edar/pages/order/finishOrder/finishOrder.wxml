@@ -1,4 +1,5 @@
 <!--pages/order/finishOrder/finishOrder.wxml-->
 <view>
+  <order-bar></order-bar>
   <order-form></order-form>
 </view>

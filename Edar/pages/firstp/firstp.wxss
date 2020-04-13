@@ -83,10 +83,6 @@
   flex-wrap: wrap;
 }
 
-.weui-cells__group {
-  background: red !important;
-}
-
 .flex_content {
   position: relative;
   width: 50px;

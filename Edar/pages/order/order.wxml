@@ -1,6 +1,13 @@
 <!--pages/order/order.wxml-->
 <view>
-  <order-bar></order-bar>
-  <order-form blockTitle="{{blockTitle}}" 
-  arr="{{orderArr}}" ></order-form>
+  <view class="page_section page_section_spacing">
+    <view class="tabBox" wx:for="{{tabList}}" data-index="{{index}}" 
+    data-id="b{{index}}" wx:key="index" bindtap="tabChange">
+      <image class="img" src="{{index == nowIndex ? item.selectedIconPath : item.iconPath}}"/>
+      <text class="text {{index == navActive ? 'navActive': ''}}">{{item.text}}</text>
+    </view>
+  </view>
+  <view style="width: 200px; height: 200px; background: red;">
+    <text>{{toView}}</text>
+  </view>
 </view>

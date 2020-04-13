@@ -5,7 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-    blockTitle: '已完成',
+    toView: '',
+    tabList: [
+      {
+        "text": "全部",
+        "iconPath": "../../resources/img/all.png",
+        "selectedIconPath": "../../resources/img/alled.png"
+      },
+      {
+        "text": "待上门",
+        "iconPath": "../../resources/img/sand.png",
+        "selectedIconPath": "../../resources/img/sanded.png"
+      },
+      {
+        "text": "维修中",
+        "iconPath": "/resources/img/fix.png",
+        "selectedIconPath": "/resources/img/fixed.png"
+      },
+      {
+        "text": "待验收",
+        "iconPath": "/resources/img/wait.png",
+        "selectedIconPath": "/resources/img/waited.png"
+      },
+      {
+        "text": "待支付",
+        "iconPath": "/resources/img/waitPay.png",
+        "selectedIconPath": "/resources/img/waitPayed.png"
+      },
+      {
+        "text": "待评价",
+        "iconPath": "/resources/img/assess.png",
+        "selectedIconPath": "/resources/img/assessed.png"
+      }
+    ],
     orderArr: [
       {
         name: '维修员工',
@@ -39,11 +71,15 @@ Page({
   },
 
   tabChange (e) {
-    // this.setData({
-    //   blockTitle: e.detail.item.text
-    // })
-    wx.navigateTo({
-      url: './finishOrder/finishOrder'
+    console.log(e)
+    // 获取数据库数据
+    let dataList = ['全部', '待上门', '维修中', '待验收', '待支付', '待评价'];
+    let id = e.currentTarget.dataset.id;
+    let index = e.currentTarget.dataset.index;
+    this.setData({
+      toView: dataList[index],
+      navActive: index,
+      nowIndex: index
     })
   },
 

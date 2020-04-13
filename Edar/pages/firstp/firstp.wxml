@@ -12,7 +12,7 @@
 
   <view class="bd">
     <mp-cells>
-      <mp-cell style="background: red;">
+      <mp-cell>
         <view class="bd_view">
           <image src="../../resources/img/sort.png" class="bd_img"/>
           <view>今日待办</view>

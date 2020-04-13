@@ -1,32 +1,34 @@
 /* pages/order/order.wxss */
+.navActive {
+  color: red;
+}
 
 .img {
   width: 80rpx;
   height: 80rpx;
-  margin-bottom: 20rpx;
 }
 
 .page_section {
   margin: 10rpx auto;
-  height: 200rpx;
   width: 97%;
-}
-
-.swiper {
-  height: 100%;
 }
 
 .page_section_spacing {
   box-sizing: border-box;
   background-color: lightblue;
   border-radius: 15rpx;
-  font-size: 40rpx;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200rpx;
+  line-height: 100rpx;
 }
 
-.content {
+.tabBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
+

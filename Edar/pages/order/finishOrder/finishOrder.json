@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "order-form": "../../pages/common/orderform/orderform"
+    "order-form": "../../pages/common/orderform/orderform",
+    "order-bar": "../../pages/common/orderbar/orderbar"
   }
 }
