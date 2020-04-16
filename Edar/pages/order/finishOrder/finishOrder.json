@@ -2,6 +2,8 @@
   "component": true,
   "usingComponents": {
     "order-form": "../../pages/common/orderform/orderform",
-    "order-bar": "../../pages/common/orderbar/orderbar"
+    "order-bar": "../../pages/common/orderbar/orderbar",
+    "mp-dialog": "../../components/weui/dialog/dialog",
+    "mp-halfScreenDialog": "../../components/weui/half-screen-dialog/half-screen-dialog"
   }
 }

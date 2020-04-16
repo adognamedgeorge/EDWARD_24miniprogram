@@ -48,7 +48,10 @@ Page({
     }, 500)
   },
   // 跳转到“订单页面”
-  bindToOrder: function () {
+  bindToOrder: function (e) {
+    console.log(e)
+    // 给传递给order页面的dataName参数赋值
+    app.globalData.dataName = e.currentTarget.dataset.name
     wx.showLoading({
       title: '加载中...',
       success: function () {

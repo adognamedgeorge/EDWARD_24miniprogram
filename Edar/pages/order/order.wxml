@@ -2,12 +2,26 @@
 <view>
   <view class="page_section page_section_spacing">
     <view class="tabBox" wx:for="{{tabList}}" data-index="{{index}}" 
-    data-id="b{{index}}" wx:key="index" bindtap="tabChange">
-      <image class="img" src="{{index == nowIndex ? item.selectedIconPath : item.iconPath}}"/>
+    data-id="b{{index}}" data-name="{{item.text}}" wx:key="index" bindtap="tabChange">
+      <image class="tabImg" src="{{index == nowIndex ? item.selectedIconPath : item.iconPath}}"/>
       <text class="text {{index == navActive ? 'navActive': ''}}">{{item.text}}</text>
     </view>
   </view>
-  <view style="width: 200px; height: 200px; background: red;">
+  <view>
     <text>{{toView}}</text>
   </view>
+
+  <finish-order wx:if="{{nowIndex == 0}}"></finish-order>
+
+  <!-- <view>
+    <view class="bg">
+      <view class="btn_view">
+        <button class="btn">修改时间</button>
+        <button class="btn" bindtap="tapConfirmButton">到达现场</button>
+      </view>
+      <mp-dialog title="" show="{{showConfirmButton}}" buttons="{{confirmButton}}" bindbuttontap="tapDialogButton">
+        <view>确认到达维修地点吗？</view>
+      </mp-dialog>
+    </view>
+  </view> -->
 </view>

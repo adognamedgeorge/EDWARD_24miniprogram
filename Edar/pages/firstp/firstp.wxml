@@ -61,7 +61,7 @@
         </view>
       </mp-cell>
       <view class="view_flex">
-        <view class="flex_content" wx:for="{{orderList}}" wx:key="index" bindtap="bindToOrder">
+        <view class="flex_content" wx:for="{{orderList}}" wx:key="index" bindtap="bindToOrder" data-id="a{{index}}" data-name="{{item.text}}">
           <image class="flex_img" src="{{item.imgSrc}}"/>
           <text>{{item.text}}</text>
           <mp-badge content="2" class="flex_badge"></mp-badge>

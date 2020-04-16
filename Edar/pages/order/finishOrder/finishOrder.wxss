@@ -1,1 +1,17 @@
 /* pages/order/finishOrder/finishOrder.wxss */
+.btn_view {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30rpx;
+  flex-direction: row;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 25rpx;
+  border: 2px solid blue;
+  color: blue;
+  width: 170rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}

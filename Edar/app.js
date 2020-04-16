@@ -34,6 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    // firstp向order页面传参
+    dataName: ''
   }
 })

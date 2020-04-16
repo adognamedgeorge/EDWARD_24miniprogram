@@ -1,11 +1,16 @@
 // pages/order/order.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    toView: '',
+    toView: '全部',
+    navActive: 0,
+    nowIndex: 0,
+    showConfirmButton: false,
+    confirmButton: [{text: '取消'}, {text: '确定'}],
     tabList: [
       {
         "text": "全部",
@@ -83,6 +88,17 @@ Page({
     })
   },
 
+  tapConfirmButton(e) {
+    this.setData({
+      showConfirmButton: true
+    })
+  },
+  tapDialogButton(e) {
+    this.setData({
+      showConfirmButton: false
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -101,7 +117,20 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let that = this
+    // 获取firstp页面传来的dataName参数
+    let dataName = app.globalData.dataName
+    // 简单模拟数据库数据
+    let dataList = ['全部', '待上门', '维修中', '待验收', '待支付', '待评价']
+    for (let i = 0; i < dataList.length; i ++) {
+      if (dataList[i] == dataName) {
+        that.setData({
+          toView: dataList[i],
+          navActive: i,
+          nowIndex: i
+        })
+      }
+    }
   },
 
   /**

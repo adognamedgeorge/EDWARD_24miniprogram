@@ -2,7 +2,7 @@ Component({
   properties: {
     blockTitle: {
       type: String,
-      value: '订单号'
+      value: '已完成'
     },
     arr: {
       type: Array,
@@ -18,7 +18,7 @@ Component({
     }
   },
   data: {
-    showConfirmButton: false
+    
   },
   methods: {
     tapConfirmButton(e) {
