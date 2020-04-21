@@ -1,0 +1,4 @@
+<!--pages/order/inFix/inFix.wxml-->
+<view>
+  <order-form blockTitle="{{dataTitle}}"></order-form>
+</view>

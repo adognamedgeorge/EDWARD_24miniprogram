@@ -3,6 +3,8 @@ const date = new Date()
 const years = []
 const months = []
 const days = []
+const hours = []
+const minutes = []
 
 for (let i = 2015; i <= date.getFullYear(); i++) {
   years.push(i)
@@ -16,19 +18,30 @@ for (let i = 1; i <= 31; i++) {
   days.push(i)
 }
 
+for (let i = 0; i <= 23; i ++) {
+  i <= 9 ? i = '0' + i : i = i;
+  hours.push(i)
+}
+
+for (let i = 0; i <= 59; i ++) {
+  i <= 9 ? i = '0' + i : i = i;
+  minutes.push(i)
+}
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    dataTitle: {
+      type: String,
+      value: ''
+    }
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    blockTitle: '已完成',
     finishArr: [
       {name: '维修员工', content: '陈萍萍  13011112222'},
       {name: '预约时间', content: '2020-4-15 13:30'},
@@ -47,7 +60,9 @@ Component({
     month: 2,
     days: days,
     day: 2,
-    value: [9999, 1, 1]
+    value: [9999, 1, 1],
+    hours: hours,
+    minutes: minutes
   },
 
   /**

@@ -7,11 +7,15 @@
       <text class="text {{index == navActive ? 'navActive': ''}}">{{item.text}}</text>
     </view>
   </view>
-  <view>
-    <text>{{toView}}</text>
-  </view>
 
-  <finish-order wx:if="{{nowIndex == 0}}"></finish-order>
+ <view class="bg">
+  <finish-order wx:if="{{nowIndex == 0}}" dataTitle="{{dataTitle}}"></finish-order>
+  <wait-visit wx:if="{{nowIndex == 1}}" dataTitle="{{dataTitle}}"></wait-visit>
+  <in-fix wx:if="{{nowIndex == 2}}" dataTitle="{{dataTitle}}"></in-fix>
+  <for-check wx:if="{{nowIndex == 3}}" dataTitle="{{dataTitle}}"></for-check>
+  <un-pay wx:if="{{nowIndex == 4}}" dataTitle="{{dataTitle}}"></un-pay>
+  <order-assess wx:if="{{nowIndex == 5}}" dataTitle="{{dataTitle}}"></order-assess>
+ </view>
 
   <!-- <view>
     <view class="bg">

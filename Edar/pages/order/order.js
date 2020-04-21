@@ -11,6 +11,7 @@ Page({
     nowIndex: 0,
     showConfirmButton: false,
     confirmButton: [{text: '取消'}, {text: '确定'}],
+    dataTitle: '已完成',
     tabList: [
       {
         "text": "全部",
@@ -84,7 +85,8 @@ Page({
     this.setData({
       toView: dataList[index],
       navActive: index,
-      nowIndex: index
+      nowIndex: index,
+      dataTitle: dataList[index]
     })
   },
 

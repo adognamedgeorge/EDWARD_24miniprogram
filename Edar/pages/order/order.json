@@ -3,8 +3,13 @@
   "usingComponents": {
     "order-form": "../pages/common/orderform/orderform",
     "mp-tabbar": "../components/weui/tabbar/tabbar",
-    "finish-order": "./finishOrder/finishOrder",
     "order-bar": "../pages/common/orderbar/orderbar",
-    "mp-dialog": "../components/weui/dialog/dialog"
+    "mp-dialog": "../components/weui/dialog/dialog",
+    "finish-order": "./finishOrder/finishOrder",
+    "wait-visit": "./waitVisit/waitVisit",
+    "in-fix": "./inFix/inFix",
+    "for-check": "./forCheck/forCheck",
+    "un-pay": "./unPay/unPay",
+    "order-assess": "./orderAssess/orderAssess"
   }
 }

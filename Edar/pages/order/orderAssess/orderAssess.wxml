@@ -1,0 +1,4 @@
+<!--pages/order/orderAssess/orderAssess.wxml-->
+<view>
+  <order-form blockTitle="{{dataTitle}}"></order-form>
+</view>

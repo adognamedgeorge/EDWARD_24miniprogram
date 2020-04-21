@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "order-form": "../../pages/common/orderform/orderform"
+  }
+}

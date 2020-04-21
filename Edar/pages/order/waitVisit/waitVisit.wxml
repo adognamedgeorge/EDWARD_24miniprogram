@@ -1,0 +1,8 @@
+<!--pages/order/waitVisit/waitVisit.wxml-->
+<view>
+  <order-form blockTitle="{{dataTitle}}"></order-form>
+  <view class="remark">
+    客户备注：
+    <text>客户备注客户备注客户备注客户备注客户备注客户备注客户备注客户备注客户备注客户备注客户备注</text>
+  </view>
+</view>

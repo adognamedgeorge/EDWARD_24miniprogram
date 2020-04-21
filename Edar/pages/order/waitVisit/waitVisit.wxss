@@ -1,0 +1,7 @@
+/* pages/order/waitVisit/waitVisit.wxss */
+.remark {
+  border-bottom: 1px dashed red;
+  margin: 30rpx;
+  font-size: 25rpx;
+  padding-bottom: 30rpx;
+}

@@ -1,0 +1,4 @@
+<!--pages/order/forCheck/forCheck.wxml-->
+<view>
+  <order-form blockTitle="{{dataTitle}}"></order-form>
+</view>
